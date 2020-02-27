@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Image("SwiftUI")
+        .resizable()
+        .scaledToFit()
+        .overlay(Text("SwiftUI").font(.largeTitle), alignment: .bottomTrailing)
+        
     }
 }
 
